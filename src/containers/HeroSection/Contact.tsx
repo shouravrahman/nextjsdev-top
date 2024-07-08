@@ -4,9 +4,9 @@ type Props = {};
 
 const Contact = (props: Props) => {
     return (
-        <section className=' rounded-2xl bg-yellow-200 text-slate-800'>
+        <section className='rounded-2xl bg-yellow-200 px-10 text-slate-800'>
             <div
-                className='section container mx-auto flex w-full flex-col px-5 py-12 md:flex-row md:py-24 lg:max-w-5xl'
+                className='section mx-auto flex w-full flex-col px-5 py-12 md:flex-row md:py-24 lg:max-w-5xl'
                 id='contact-form'
             >
                 <div className='w-full md:w-1/3'>

@@ -1,4 +1,3 @@
-import SectionHeader from "./SectionHeader.tsx";
 import ProjectCard from "./ProjectCard.tsx";
 import project1 from "../../../public/images/project1.png";
 import project2 from "../../../public/images/project2.png";
@@ -77,42 +76,26 @@ const projects = [
 
 const Bento = () => {
     return (
-        <div className='relative flex flex-col pt-20'>
-            <SectionHeader
-                title='My Projects'
-                subtitle='Showcasing Our Latest Work and Innovations'
-            />
-
-            <div className='relative flex h-screen w-full flex-col items-center justify-center p-6'>
-                <div
-                    className='grid h-full w-full grid-cols-6 grid-rows-4 place-content-center gap-4'
-                    style={{
-                        gridTemplateAreas: `
-              "project1 project1 project1 project1 project2 project2"
-              "project1 project1 project1 project1 project3 project3"
-              "project4 project4 project4 project5 project5 project5"
-              "project6 project6 project6 project5 project5 project5"
-            `,
-                    }}
-                >
-                    {projects.map((project) => (
-                        <div
-                            key={project.id}
-                            style={{
-                                gridArea: project.gridArea,
-                            }}
-                        >
-                            <ProjectCard
-                                githubLink={project.githubLink}
-                                liveLink={project.liveLink}
-                                tags={project.tags}
-                                title={project.title}
-                                subtitle={project.subtitle}
-                                image={project.image}
-                            />
-                        </div>
-                    ))}
-                </div>
+        <div className='bentoContainer'>
+            <div className='gridContainer'>
+                {projects.map((project) => (
+                    <div
+                        key={project.id}
+                        style={{
+                            gridArea: project.gridArea,
+                            width: "100%",
+                        }}
+                    >
+                        <ProjectCard
+                            githubLink={project.githubLink}
+                            liveLink={project.liveLink}
+                            tags={project.tags}
+                            title={project.title}
+                            subtitle={project.subtitle}
+                            image={project.image}
+                        />
+                    </div>
+                ))}
             </div>
         </div>
     );

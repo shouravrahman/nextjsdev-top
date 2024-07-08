@@ -140,3 +140,61 @@
     }
   }
 }
+.bentoContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 80%;
+
+  @media (max-width: 600px) {
+
+    width: 100%;
+  }
+}
+
+.gridContainer {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(6,1fr);
+
+  // grid  grid-cols-6 grid-rows-6 place-content-center gap-6
+  gap: 1.5rem;
+  grid-template-areas: 
+    "project1 project1 project1 project1 project2 project2"
+    "project1 project1 project1 project1 project2 project2"
+    "project3 project3 project3 project4 project4 project4"
+    "project3 project3 project3 project4 project4 project4"
+    "project6 project6 project5 project5 project5 project5"
+    "project6 project6 project5 project5 project5 project5";
+
+  @media (max-width: 1200px) {
+    grid-template-areas: 
+    "project1 project1 project1 project1 project2 project2"
+    "project1 project1 project1 project1 project2 project2"
+    "project3 project3 project3 project4 project4 project4"
+    "project3 project3 project3 project4 project4 project4"
+    "project6 project6 project5 project5 project5 project5"
+    "project6 project6 project5 project5 project5 project5";
+  }
+
+  @media (max-width: 900px) {
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "project1 project1 project1 project1 project1 project1"
+    "project2 project2 project2 project2 project2 project2"
+    "project3 project3 project3 project4 project4 project4"
+    "project5 project5 project5 project5 project5 project5"
+    "project6 project6 project6 project6 project6 project6";
+  }
+
+  @media (max-width: 600px) {
+    grid-template-areas: 
+    "project1 project1 project1 project1 project1 project1"
+    "project2 project2 project2 project2 project2 project2"
+    "project3 project3 project3 project3 project3 project3"
+    "project4 project4 project4 project4 project4 project4"
+    "project5 project5 project5 project5 project5 project5"
+    "project6 project6 project6 project6 project6 project6";
+  }
+}

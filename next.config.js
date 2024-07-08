@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ["cdn.sanity.io"],
+        domains: ["cdn.sanity.io","https://nextuipro.nyc3.cdn.digitaloceanspaces.com","https://images.unsplash.com/"],
     },
     reactStrictMode: true,
     swcMinify: true,

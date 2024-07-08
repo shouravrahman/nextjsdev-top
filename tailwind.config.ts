@@ -40,7 +40,9 @@ const tailwind = {
         12:"12rem"
       },
       animation: {
-        loader: 'loader 0.6s infinite alternate'
+        loader: 'loader 0.6s infinite alternate',
+        "scrolling-banner": "scrolling-banner var(--duration) linear infinite",
+        "scrolling-banner-vertical": "scrolling-banner-vertical var(--duration) linear infinite",
       },
       keyframes: {
         loader: {
@@ -48,8 +50,18 @@ const tailwind = {
             opacity: 0.1,
             transform: 'translate3d(0, -1rem, 0)'
           }
-        }
-      }
+        },
+        "scrolling-banner": {
+          from: {transform: "translateX(0)"},
+          to: {transform: "translateX(calc(-50% - var(--gap)/2))"},
+        },
+        "scrolling-banner-vertical": {
+          from: {transform: "translateY(0)"},
+          to: {transform: "translateY(calc(-50% - var(--gap)/2))"},
+        },
+      },
+     
+      
     },
   },
   variants: {},

@@ -60,15 +60,6 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-            <section className='mb-10 w-full pb-20 pt-[90px] md:pb-[70px] md:pt-[100px]'>
-                <div className='container px-3'>
-                    <Services />
-
-                    <Bento />
-                    <Skills />
-                    <Contact />
-                </div>
-            </section>
         </>
     );
 };
