@@ -1,3 +1,4 @@
+import SocialLink from "@/components/SocialLink.tsx";
 import React from "react";
 
 const ProfileCard = () => {
@@ -29,24 +30,11 @@ const ProfileCard = () => {
                         Download CV
                     </div>
                 </button>
-                <div className=' mt-10 flex justify-between gap-6 rounded-[50px] bg-yellow-200 p-4 text-black  md:p-10 '>
-                    <div className='my-auto text-base font-extrabold uppercase leading-6'>
-                        Follow Me:
+                <div className='mt-10 flex flex-col justify-between gap-6 rounded-[50px] bg-yellow-200  p-6 text-black  '>
+                    <div className=' text-center text-base font-extrabold uppercase leading-6'>
+                        Contact Me:
                     </div>
-                    <div className='flex gap-1 whitespace-nowrap text-lg '>
-                        <div className='justify-center rounded-full border-[3px] border-solid border-white p-2'>
-                            
-                        </div>
-                        <div className='justify-center rounded-full border-[3px] border-solid border-white p-2'>
-                            
-                        </div>
-                        <div className='justify-center rounded-full border-[3px] border-solid border-white p-2'>
-                            
-                        </div>
-                        <div className='justify-center rounded-full border-[3px] border-solid border-white p-2'>
-                            
-                        </div>
-                    </div>
+                    <SocialLink />
                 </div>
             </div>
         </div>

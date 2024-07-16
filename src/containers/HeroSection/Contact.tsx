@@ -4,20 +4,20 @@ type Props = {};
 
 const Contact = (props: Props) => {
     return (
-        <section className='rounded-2xl bg-yellow-200 px-10 text-slate-800'>
+        <section className='max-w-5xl rounded-2xl bg-yellow-200   md:px-10'>
             <div
-                className='section mx-auto flex w-full flex-col px-5 py-12 md:flex-row md:py-24 lg:max-w-5xl'
+                className='section  mx-auto flex w-full flex-col px-5 py-8 md:flex-row md:py-24 lg:max-w-5xl'
                 id='contact-form'
             >
-                <div className='w-full md:w-1/3'>
+                <div className='hidden w-full md:w-1/3 lg:block'>
                     <h1 className='title-font mb-4 text-4xl font-bold text-gray-800 sm:text-4xl'>
-                        Contact Us
+                        Contact Me
                     </h1>
                     <p className='text-xl leading-relaxed text-gray-900'>
-                        We're here to assist you! If you have any questions or
-                        need assistance, please feel free to reach out to us.
+                        I am here to assist you! If you have any questions or
+                        need assistance, please feel free to reach out to me.
                         <br />
-                        You can also email us
+                        You can also email me
                         <a
                             href='https://veilmail.io/e/FkKh7o'
                             className='font-medium text-blue-600 hover:underline'
@@ -26,7 +26,7 @@ const Contact = (props: Props) => {
                         </a>
                     </p>
                     <p className='mt-8 text-xl leading-relaxed text-gray-900'>
-                        Connect with us on social media:
+                        Connect with me on social media:
                     </p>
                     <span className='mt-6 inline-flex justify-center sm:justify-start'>
                         <a
@@ -127,20 +127,11 @@ const Contact = (props: Props) => {
                         <div className='w-full p-2'>
                             <button
                                 type='submit'
-                                className='g-recaptcha mx-0 flex flex-col rounded border-0 bg-gray-900 px-6 py-4 text-center text-xl font-bold text-white shadow-lg hover:bg-blue-900 focus:outline-none'
+                                className='g-recaptcha mx-0 flex flex-col rounded border-0 bg-orange-500 px-6 py-4 text-center text-xl font-bold  shadow-lg hover:bg-yellow-700 focus:outline-none'
                             >
                                 Send Message ✉
                             </button>
                         </div>
-                        <p className='mt-8 text-xl leading-relaxed text-gray-900'>
-                            We use VeilMail.io to{" "}
-                            <a
-                                className='font-medium text-blue-600 hover:underline dark:text-blue-500'
-                                href='https://veilmail.io'
-                            >
-                                hide email address from spammers
-                            </a>
-                        </p>
                     </form>
                 </div>
             </div>

@@ -1,75 +1,85 @@
 import React from "react";
 import { Spacer } from "@nextui-org/react";
 
-import {
-    Logo1,
-    Logo10,
-    Logo2,
-    Logo3,
-    Logo4,
-    Logo5,
-    Logo6,
-    Logo7,
-    Logo8,
-    Logo9,
-} from "./logos";
+import HtmlIcon from "/public/icons/html.svg";
+import CssIcon from "/public/icons/css.svg";
+import JavascriptIcon from "/public/icons/javascript.svg";
+import NodeIcon from "/public/icons/node.svg";
+import ReactIcon from "/public/icons/reactjs.svg";
+import NextJsIcon from "/public/icons/nextjs.svg";
+import MongoDBIcon from "/public/icons/mongodb.svg";
+import TypescriptIcon from "/public/icons/typescript.svg";
+import TailwindCssIcon from "/public/icons/tailwindcss.svg";
+import SassIcon from "/public/icons/sass.svg";
+import GithubIcon from "/public/icons/github.svg";
+import DockerIcon from "/public/icons/docker.svg";
 
 import ScrollingBanner from "./scrolling-banner";
 import SectionHeader from "@/containers/HeroSection/SectionHeader.tsx";
+import Image from "next/image";
 
 const logos = [
     {
-        key: "logo-1",
-        logo: Logo1,
+        key: "html",
+        logo: HtmlIcon,
     },
     {
-        key: "logo-2",
-        logo: Logo2,
+        key: "css",
+        logo: CssIcon,
     },
     {
-        key: "logo-3",
-        logo: Logo3,
+        key: "javascript",
+        logo: JavascriptIcon,
     },
     {
-        key: "logo-4",
-        logo: Logo4,
+        key: "node",
+        logo: NodeIcon,
     },
     {
-        key: "logo-5",
-        logo: Logo5,
+        key: "react",
+        logo: ReactIcon,
     },
     {
-        key: "logo-6",
-        logo: Logo6,
+        key: "nextjs",
+        logo: NextJsIcon,
     },
     {
-        key: "logo-7",
-        logo: Logo7,
+        key: "mongodb",
+        logo: MongoDBIcon,
     },
     {
-        key: "logo-8",
-        logo: Logo8,
+        key: "typescript",
+        logo: TypescriptIcon,
+    },
+
+    {
+        key: "tailwindcss",
+        logo: TailwindCssIcon,
     },
     {
-        key: "logo-9",
-        logo: Logo9,
+        key: "sass",
+        logo: SassIcon,
     },
     {
-        key: "logo-10",
-        logo: Logo10,
+        key: "github",
+        logo: GithubIcon,
+    },
+    {
+        key: "docker",
+        logo: DockerIcon,
     },
 ];
 
 export default function ScrollingSkills() {
     return (
-        <section className='mx-auto w-full max-w-6xl px-6 py-20 sm:py-32 lg:px-8 lg:py-20'>
+        <section className='mx-auto  max-w-6xl px-6 py-20 sm:py-32 lg:px-8 lg:py-20'>
             <ScrollingBanner shouldPauseOnHover duration={50} gap='40px'>
                 {logos.map(({ key, logo }) => (
                     <div
                         key={key}
-                        className='text-foreground flex items-center justify-center'
+                        className='text-foreground flex  items-center justify-center'
                     >
-                        {logo}
+                        <Image className='invert' src={logo} alt={key} />
                     </div>
                 ))}
             </ScrollingBanner>
@@ -83,9 +93,9 @@ export default function ScrollingSkills() {
                 {logos.map(({ key, logo }) => (
                     <div
                         key={key}
-                        className='text-foreground flex items-center justify-center'
+                        className='text-foreground flex  items-center justify-center'
                     >
-                        {logo}
+                        <Image className='invert' src={logo} alt={key} />
                     </div>
                 ))}
             </ScrollingBanner>

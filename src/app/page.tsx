@@ -45,7 +45,7 @@ export default async function Home() {
         <>
             <div
                 className={
-                    "font-regular  bg-emerald-100 pb-[20px] text-lg leading-relaxed text-black dark:bg-slate-900 dark:text-white md:min-h-screen"
+                    "font-regular bg-emerald-100 pb-[20px] text-lg leading-relaxed text-black dark:bg-slate-900 dark:text-white md:min-h-screen"
                 }
                 key={Math.random()}
             >
@@ -54,7 +54,7 @@ export default async function Home() {
                 <div className='flex w-full flex-col items-center  px-20 py-16 max-md:max-w-full max-md:px-5'>
                     <SectionHeader
                         title='My Projects'
-                        subtitle='Showcasing Our Latest Work and Innovations'
+                        subtitle='Showcasing My Latest Work'
                     />
                     <Bento />
                 </div>
@@ -69,7 +69,7 @@ export default async function Home() {
                 <div className='flex w-full flex-col items-center '>
                     <SectionHeader
                         title='Contact Me'
-                        subtitle='Comprehensive Skills Tailored to Your Needs'
+                        subtitle='Crafting Custom Solutions with Expertise '
                     />
                     <Contact />
                 </div>

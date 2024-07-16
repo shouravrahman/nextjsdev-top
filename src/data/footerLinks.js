@@ -32,10 +32,7 @@ const footerLinks = {
         name: "Contact",
         url: "/contact",
       },
-      {
-        name: "External Articles",
-        url: "/external-articles",
-      },
+    
       
     ],
     socialMedia:[

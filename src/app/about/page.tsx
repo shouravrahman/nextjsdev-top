@@ -40,32 +40,50 @@ const About = async () => {
                             </div>
                         </>
                     )} */}
-                    <div className='flex items-center justify-between  px-8 max-md:px-5'>
-                        <div className='flex gap-10 max-md:flex-col max-md:gap-0'>
-                            <ProfileCard />
-
+                    <div className='flex items-start justify-between  px-8 max-md:px-5'>
+                        <ProfileCard />
+                        <div className='mx-12 flex gap-10 max-md:flex-col max-md:gap-0'>
                             <div className=' max-w-full max-md:mt-10'>
                                 <div className='max-w-[200px] justify-center self-start whitespace-nowrap rounded-[800px] border-2 border-solid border-emerald-400 px-7 py-1.5 text-center text-base font-semibold leading-6 text-white max-md:max-w-full max-md:px-5'>
                                     Introduction
                                 </div>
-                                <h2 className=' text-6xl font-bold leading-snug text-orange-500'>
+                                <h2 className=' mt-4 text-4xl font-bold leading-snug text-orange-500'>
                                     Hey! I am
-                                    <br />
-                                    <span className='text-yellow-300'>
-                                        Ikonicwebs
+                                    <span className='ml-2 text-yellow-300'>
+                                        Shourav(show - rob)
                                     </span>
                                     <br />
-                                    UX/UI Designer & Social Media Manager
+                                    Full Stack Developer
                                 </h2>
-                                <p className='text-xl leading-relaxed   max-md:max-w-full'>
-                                    I’m a designer and hand lettering artist
-                                    based in Detroit, but I’ll always be a
-                                    California gal at heart. I picked up hand
-                                    lettering as a hobby while studying
-                                    advertising at the School of Visual Arts,
-                                    and over the next few years (+ thanks to the
-                                    power of the internet) I leveraged a few
-                                    clever <br />
+                                <p className='mt-4 text-xl leading-loose   max-md:max-w-full'>
+                                    I specialize in building user-friendly
+                                    websites and web applications with Next.js
+                                    and React.js. <br />
+                                    <br />
+                                    Using tools like Express and Supabase, I
+                                    love bringing ideas to life through clean,
+                                    efficient code. <br />
+                                    <br /> Collaboration and clear communication
+                                    are essential to my workflow, ensuring that
+                                    every project runs smoothly from start to
+                                    finish. My background in integrating APIs,
+                                    managing state, and styling web apps helps
+                                    me create visually appealing and highly
+                                    functional products. I focus on crafting
+                                    unique digital experiences using JavaScript
+                                    and its ecosystem, including React, Next.js,
+                                    Astro, Node.js, and the MERN stack. <br />
+                                    <br /> Each project I take on is tailored to
+                                    reflect your brand and connect with your
+                                    audience. With a keen eye for detail and a
+                                    commitment to excellence, I strive to
+                                    deliver pixel-perfect designs. <br />
+                                    <br />
+                                    I’m passionate about developing SaaS
+                                    products, exploring LangChain, and building
+                                    AI applications. Let's collaborate and
+                                    transform your ideas into impactful digital
+                                    solutions!
                                 </p>
                             </div>
                         </div>
@@ -105,25 +123,28 @@ const About = async () => {
                                         srcSet='https://cdn.builder.io/api/v1/image/assets/TEMP/863d0b3b0d0baf403f7ffa70b0c791b89dfe5aa31e6e19180605e7963f282c80?apiKey=da07e19f41d04fb48b0651b8deb55908&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/863d0b3b0d0baf403f7ffa70b0c791b89dfe5aa31e6e19180605e7963f282c80?apiKey=da07e19f41d04fb48b0651b8deb55908&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/863d0b3b0d0baf403f7ffa70b0c791b89dfe5aa31e6e19180605e7963f282c80?apiKey=da07e19f41d04fb48b0651b8deb55908&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/863d0b3b0d0baf403f7ffa70b0c791b89dfe5aa31e6e19180605e7963f282c80?apiKey=da07e19f41d04fb48b0651b8deb55908&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/863d0b3b0d0baf403f7ffa70b0c791b89dfe5aa31e6e19180605e7963f282c80?apiKey=da07e19f41d04fb48b0651b8deb55908&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/863d0b3b0d0baf403f7ffa70b0c791b89dfe5aa31e6e19180605e7963f282c80?apiKey=da07e19f41d04fb48b0651b8deb55908&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/863d0b3b0d0baf403f7ffa70b0c791b89dfe5aa31e6e19180605e7963f282c80?apiKey=da07e19f41d04fb48b0651b8deb55908&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/863d0b3b0d0baf403f7ffa70b0c791b89dfe5aa31e6e19180605e7963f282c80?apiKey=da07e19f41d04fb48b0651b8deb55908&'
                                         className='aspect-[3.33] w-full max-md:max-w-full'
                                     />
-                                    <div className='mt-6 max-md:max-w-full'>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit. In nisi, augue
+                                    <div className='mt-6 leading-loose max-md:max-w-full'>
+                                        With a wealth of experience in website
+                                        design, I craft visually stunning and
+                                        highly functional sites that stand out.{" "}
                                         <br />
-                                        urna, mauris elementum ligula semper
-                                        enim. Tristique sed sit facilisis
                                         <br />
-                                        ultrices rhoncus eget ullamcorper
-                                        tellus. Itaque earum rerum hic
+                                        My approach combines a keen eye for
+                                        detail with a deep understanding of user
+                                        experience, ensuring each design is not
+                                        only beautiful but also intuitive and
+                                        engaging. <br />
+                                        <br />I specialize in creating unique
+                                        digital experiences that reflect your
+                                        brand and captivate your audience. From
+                                        seamless navigation to responsive
+                                        layouts, every element is carefully
+                                        considered and meticulously executed.{" "}
                                         <br />
-                                        tenetur a sapiente delectus, ut aut
-                                        reiciendi.
-                                    </div>
-                                    <div className='mt-6 max-md:max-w-full'>
-                                        Srepellat volup tatibus maiores aliasta
-                                        consequatur auto perferendis
                                         <br />
-                                        repellat quia voluptas sit upto
-                                        aspernatur te natus accusan.
+                                        Download my CV to see more of my work
+                                        and discover how I can help bring your
+                                        vision to life.
                                     </div>
                                 </div>
                             </div>

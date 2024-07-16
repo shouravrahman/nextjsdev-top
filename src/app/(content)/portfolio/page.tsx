@@ -9,42 +9,65 @@ import logoPlanetaria from "/images/logos/planetaria.svg";
 
 import { SimpleLayout } from "@/components/Article/SimpleLayout.tsx";
 import { Card } from "@/components/Article/Card.tsx";
+import Link from "next/link";
 
 const projects = [
     {
-        name: "Planetaria",
-        description:
-            "Creating technology to empower civilians to explore space on their own terms.",
-        link: { href: "/portfolio/planetaria", label: "planetaria.tech" },
-        // logo: logoPlanetaria,
+        id: 1,
+        title: "Project1",
+        githubLink: "https://github.com/project1",
+        liveLink: "https://project1.live",
+        tags: ["React", "Next.js"],
+        href: "https://project1.url",
+        subtitle: "blah blah blah",
     },
     {
-        name: "Animaginary",
-        description:
-            "High performance web animation library, hand-written in optimized WASM.",
-        link: { href: "/portfolio/planetaria", label: "github.com" },
-        // logo: logoAnimaginary,
+        id: 2,
+        title: "Project1",
+        githubLink: "https://github.com/project2",
+        liveLink: "https://project2.live",
+        tags: ["Node.js", "Express"],
+        href: "https://project2.url",
+        subtitle: "blah blah blah",
     },
     {
-        name: "HelioStream",
-        description:
-            "Real-time video streaming library, optimized for interstellar transmission.",
-        link: { href: "/portfolio/planetaria", label: "github.com" },
-        // logo: logoHelioStream,
+        id: 3,
+        title: "Project1",
+        githubLink: "https://github.com/project3",
+        liveLink: "https://project3.live",
+        tags: ["GraphQL", "Apollo"],
+        href: "https://project3.url",
+        subtitle: "blah blah blah",
     },
     {
-        name: "cosmOS",
-        description:
-            "The operating system that powers our Planetaria space shuttles.",
-        link: { href: "/portfolio/planetaria", label: "github.com" },
-        // logo: logoCosmos,
+        id: 4,
+        title: "Project1",
+        githubLink: "https://github.com/project4",
+        liveLink: "https://project4.live",
+        tags: ["Tailwind CSS", "UI/UX"],
+        href: "https://project4.url",
+
+        subtitle: "blah blah blah",
     },
     {
-        name: "OpenShuttle",
-        description:
-            "The schematics for the first rocket I designed that successfully made it to orbit.",
-        link: { href: "/portfolio/planetaria", label: "github.com" },
-        // logo: logoOpenShuttle,
+        id: 5,
+        title: "Project1",
+        githubLink: "https://github.com/project5",
+        liveLink: "https://project5.live",
+        tags: ["TypeScript", "Redux"],
+        href: "https://project5.url",
+
+        subtitle: "blah blah blah",
+    },
+    {
+        id: 6,
+        title: "Project1",
+        githubLink: "https://github.com/project6",
+        liveLink: "https://project6.live",
+        tags: ["Docker", "Kubernetes"],
+        href: "https://project6.url",
+
+        subtitle: "blah blah blah",
     },
 ];
 
@@ -75,7 +98,11 @@ export default function Projects() {
                 className='grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3'
             >
                 {projects.map((project) => (
-                    <Card as='li' key={project.name}>
+                    <Card
+                        as='li'
+                        key={project.id}
+                        className='rounded-2xl bg-orange-300 p-5 text-white '
+                    >
                         <div className='relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0'>
                             <Image
                                 src='/public/images/logos/cosmos.svg'
@@ -85,18 +112,36 @@ export default function Projects() {
                                 className='h-8 w-8'
                             />
                         </div>
-                        <h2 className='mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100'>
-                            <Card.Link href={project.link.href}>
-                                {project.name}
+                        <h2 className='mt-6 text-lg font-semibold text-zinc-800  '>
+                            <Card.Link
+                                className='hover:text-white'
+                                href={`${process.env.NEXT_PUBLIC_APP_URL}/portfolio/${project.title}`}
+                            >
+                                {project.title}
                             </Card.Link>
                         </h2>
-                        <Card.Description>
-                            {project.description}
-                        </Card.Description>
-                        <p className='relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200'>
-                            <LinkIcon className='h-6 w-6 flex-none' />
-                            <span className='ml-2'>{project.link.label}</span>
-                        </p>
+                        <Card.Description>{project.subtitle}</Card.Description>
+                        <div className='mt-6 flex gap-6'>
+                            {project.githubLink && (
+                                <Link href={project.githubLink}>
+                                    <img
+                                        src='/github-fill.svg'
+                                        alt='GitHub Link'
+                                        className='h-8 w-8'
+                                    />
+                                </Link>
+                            )}
+                            {/* Live Link */}
+                            {project.liveLink && (
+                                <Link href={project.liveLink}>
+                                    <img
+                                        src='/links-line.svg'
+                                        alt='Live Link'
+                                        className='h-8 w-8'
+                                    />
+                                </Link>
+                            )}
+                        </div>
                     </Card>
                 ))}
             </ul>

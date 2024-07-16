@@ -37,9 +37,9 @@ const HeroSection = () => {
                                     </div>
                                 </div>
                                 <div className='mt-16 text-center  text-xl text-white max-md:mt-6 max-md:max-w-full'>
-                                    Hi, I'm Shourav, specializing in Next.js to
-                                    create amazing web experiences with years of
-                                    passion and expertise
+                                    Hi, I'm Shourav, specializing in Next.js and
+                                    React.js to create amazing web experiences
+                                    with years of passion and expertise.
                                 </div>
                                 <button className='relative mt-10 h-[40px]  w-[250px]'>
                                     <span className='absolute left-0 top-0 ml-1 mt-1 h-full w-full rounded bg-orange-400'></span>
